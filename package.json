@@ -18,8 +18,7 @@
             "src/**/*.test.js"
         ],
         "require": [
-            "babel-polyfill",
-            "./src/utils/require"
+            "babel-polyfill"
         ]
     },
     "keywords": [
@@ -34,7 +33,6 @@
     "author": "Yan Nunes",
     "license": "MIT",
     "dependencies": {
-
         "lodash": "^4.17.10",
         "loglevel": "^1.6.1",
         "mongoose": "^5.1.1",

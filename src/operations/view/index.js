@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const currentService = __dirname.split('/').pop()
-const { ensureIsInt } = require('../../utils/shared')
+const ensureIsInt = require('../../utils/assert/ensureIsInt')
 
 module.exports = async function service_view(payload, procedure) {
     // connapp.alpha.view.events
