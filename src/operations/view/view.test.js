@@ -140,7 +140,7 @@ test.cb('should query correctly [valide inputs | without skip]', t => {
                             t.deepEqual(payload.filter, filter)
 
                             return {
-                                skip: skip => {
+                                skip: () => {
                                     t.fail()
                                 },
                                 limit: limit => {

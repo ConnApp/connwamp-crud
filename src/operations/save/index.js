@@ -6,8 +6,8 @@ module.exports = async function service_save(payload, procedure) {
 
     // connapp.alpha.save.events
     const [
-        appConcern,
-        apiVersion,
+        appConcern, // eslint-disable-line
+        apiVersion, // eslint-disable-line
         operation,
         model,
     ] = procedure.split('.')

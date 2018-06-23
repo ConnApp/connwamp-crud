@@ -5,8 +5,8 @@ const ensureIsInt = require('../../utils/assert/ensureIsInt')
 module.exports = async function service_view(payload, procedure) {
     // connapp.alpha.view.events
     const [
-        appConcern,
-        apiVersion,
+        appConcern, // eslint-disable-line
+        apiVersion, // eslint-disable-line
         operation,
         model,
     ] = procedure.split('.')
