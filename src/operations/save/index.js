@@ -33,7 +33,7 @@ module.exports = async function service_save(payload, procedure) {
         result = {
             status: 'success',
             document: savedDocument,
-            message: 'Document updated successfully',
+            message: `Document ${_id ? 'updated' : 'saved'} successfully`,
         }
     } catch (error) {
         result = {

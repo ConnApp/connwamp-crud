@@ -28,7 +28,9 @@ module.exports = async function service_view(payload, procedure) {
 
     const Query = project ? Model.find(filter, project) : Model.find(filter)
 
-    Query.skip(skip).limit(limit)
+    if (skip) Query.skip(skip)
+
+    Query.limit(limit)
 
     if (sort) Query.sort(sort)
     if (populate) Query.populate(populate)

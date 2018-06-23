@@ -29,7 +29,7 @@ module.exports = async function service_delete(payload, procedure) {
         } else {
             const document = await Model.findOne({ _id })
 
-            await document.delete()
+            await document.remove()
         }
 
         result = {
