@@ -39,6 +39,7 @@
         "nodemon": "^1.17.4",
         "websocket": "^1.0.26",
         "to-slug-case": "^1.0.0",
+        "connutils": "git+https://github.com/ConnApp/connutils.git#master",
         "connmodels": "git+https://github.com/ConnApp/connmodels.git#master"
     },
     "devDependencies": {
